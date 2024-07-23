@@ -3,11 +3,17 @@ import Header from './Header/Header';
 import './Header/Header.css';
 import './App.css';
 import Footer from './Footer/Footer';
+import BRIARIMG from '/src/assets/img/Briar.jpg';
+import WUKONGIMG from '/src/assets/img/Wukong.jpg';
+import REKSAIIMG from '/src/assets/img/RekSai.jpg';
+import JINXIMG from '/src/assets/img/Jinx.jfif';
+import XINZHAOIMG from '/src/assets/img/XinZhao.jfif';
+import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
 
 function App() {
   const [yourChamp, setYourChamp] = useState({
     name: 'Briar',
-    url: './src/assets/img/Briar.jpg',
+    url: BRIARIMG,
     desc: {
       Ability:
         'Durante o Frenesi Sanguinário, ela ganha Velocidade de Ataque e Velocidade de Movimento, e seus ataques causam Dano Físico ao redor do alvo principal.',
@@ -20,7 +26,7 @@ function App() {
   const champions = [
     {
       name: 'Briar',
-      url: './src/assets/img/Briar.jpg',
+      url: BRIARIMG,
       desc: {
         Ability:
           'Durante o Frenesi Sanguinário, ela ganha Velocidade de Ataque e Velocidade de Movimento, e seus ataques causam Dano Físico ao redor do alvo principal.',
@@ -31,7 +37,7 @@ function App() {
     },
     {
       name: 'Wukong',
-      url: './src/assets/img/Wukong.jpg',
+      url: WUKONGIMG,
       desc: {
         Ability:
           'O próximo ataque de Wukong recebe Alcance de Ataque, causa dano adicional e reduz a Armadura do alvo por alguns segundos.',
@@ -42,7 +48,7 @@ function App() {
     },
     {
       name: 'RekSai',
-      url: './src/assets/img/RekSai.jpg',
+      url: REKSAIIMG,
       desc: {
         Ability:
           'Ela pode ativar essa habilidade para se tornar brevemente inalvejável e saltar até o alvo marcado, causando dano pesado com base na Vida perdida dele',
@@ -53,7 +59,7 @@ function App() {
     },
     {
       name: 'Jinx',
-      url: './src/assets/img/Jinx.jfif',
+      url: JINXIMG,
       desc: {
         Ability:
           'Jinx usa Zapper, sua pistola de choques, para disparar um projétil que causa dano ao primeiro inimigo atingido, reduzindo sua velocidade e revelando-o.',
@@ -64,7 +70,7 @@ function App() {
     },
     {
       name: 'Xin Zhao',
-      url: './src/assets/img/XinZhao.jfif',
+      url: XINZHAOIMG,
       desc: {
         Ability:
           'Xin Zhao golpeia à frente com a lança, causando Lentidão e marcando os inimigos atingidos como Desafiados.',
@@ -75,7 +81,7 @@ function App() {
     },
     {
       name: 'Em breve...',
-      url: './src/assets/LOL-LOGO.png',
+      url: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
@@ -86,7 +92,7 @@ function App() {
     },
     {
       name: 'Em breve...',
-      url: './src/assets/LOL-LOGO.png',
+      url: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
@@ -97,7 +103,7 @@ function App() {
     },
     {
       name: 'Em breve...',
-      url: './src/assets/LOL-LOGO.png',
+      url: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
@@ -108,7 +114,7 @@ function App() {
     },
     {
       name: 'Em breve...',
-      url: './src/assets/LOL-LOGO.png',
+      url: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
@@ -119,7 +125,7 @@ function App() {
     },
     {
       name: 'Em breve...',
-      url: './src/assets/LOL-LOGO.png',
+      url: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
