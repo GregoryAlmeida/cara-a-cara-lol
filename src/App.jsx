@@ -5,10 +5,12 @@ import './App.css';
 import './Modal.css';
 import Footer from './Footer/Footer';
 import BRIARIMG from '/src/assets/img/Briar.jpg';
-import WUKONGIMG from '/src/assets/img/Wukong.jpg';
+import WUKONGIMG from '/src/assets/img/Wukong.jfif';
 import REKSAIIMG from '/src/assets/img/RekSai.jpg';
-import JINXIMG from '/src/assets/img/Jinx.jfif';
+import JINXIMG from '/src/assets/img/Jinx.png';
 import XINZHAOIMG from '/src/assets/img/XinZhao.jfif';
+import XAYAHIMG from '/src/assets/img/Xayah.jpg';
+import YASUOIMG from '/src/assets/img/Yasuo.jfif';
 import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
 
 function App() {
@@ -90,26 +92,26 @@ function App() {
     },
     {
       id: 5,
-      name: 'Em breve...',
-      url: LOLLOGOIMG,
+      name: 'Xayah',
+      url: XAYAHIMG,
       desc: {
         Ability:
-          'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
-        Local: 'Local...Em breve...',
+          'Xayah recolhe todas as Plumas que caíram, causando dano e enraizando os inimigos.',
+        Local: 'Ionia',
         Historia:
-          'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+          'Mortal e precisa, Xayah é uma vastaya revolucionária que trava sua própria batalha para salvar seu povo.',
       },
     },
     {
       id: 6,
-      name: 'Em breve...',
-      url: LOLLOGOIMG,
+      name: 'Yasuo',
+      url: YASUOIMG,
       desc: {
         Ability:
-          'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
-        Local: 'Local...Em breve...',
+          'Cria uma parede movediça que bloqueia todos os projéteis inimigos por 4 segundos.',
+        Local: 'Ionia',
         Historia:
-          'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+          'Yasuo, um ioniano extremamente determinado, é também um ágil espadachim que usa o próprio ar como arma para enfrentar seus inimigos.',
       },
     },
     {
@@ -189,11 +191,11 @@ function App() {
         </div>
         {modal && (
           <div className="modal">
-            <h1>ESCOLHA...</h1>
+            <h1>ESCOLHA</h1>
             {selectChamp ? (
               <div>
                 <button onClick={() => setSelectChamp(false)}>
-                  Escolher seu Campeão
+                  Escolher Campeão
                 </button>
                 OU
                 <button
