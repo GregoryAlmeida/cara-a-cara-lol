@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from './Header/Header';
 import './Header/Header.css';
 import './App.css';
+import './Modal.css';
 import Footer from './Footer/Footer';
 import BRIARIMG from '/src/assets/img/Briar.jpg';
 import WUKONGIMG from '/src/assets/img/Wukong.jpg';
@@ -11,6 +12,9 @@ import XINZHAOIMG from '/src/assets/img/XinZhao.jfif';
 import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
 
 function App() {
+  const [modal, setModal] = useState(true);
+  const [selectChamp, setSelectChamp] = useState(true);
+
   const [yourChamp, setYourChamp] = useState({
     name: 'Briar',
     url: BRIARIMG,
@@ -25,6 +29,7 @@ function App() {
 
   const champions = [
     {
+      id: 0,
       name: 'Briar',
       url: BRIARIMG,
       desc: {
@@ -36,6 +41,7 @@ function App() {
       },
     },
     {
+      id: 1,
       name: 'Wukong',
       url: WUKONGIMG,
       desc: {
@@ -47,6 +53,7 @@ function App() {
       },
     },
     {
+      id: 2,
       name: 'RekSai',
       url: REKSAIIMG,
       desc: {
@@ -58,6 +65,7 @@ function App() {
       },
     },
     {
+      id: 3,
       name: 'Jinx',
       url: JINXIMG,
       desc: {
@@ -69,6 +77,7 @@ function App() {
       },
     },
     {
+      id: 4,
       name: 'Xin Zhao',
       url: XINZHAOIMG,
       desc: {
@@ -80,6 +89,7 @@ function App() {
       },
     },
     {
+      id: 5,
       name: 'Em breve...',
       url: LOLLOGOIMG,
       desc: {
@@ -91,6 +101,7 @@ function App() {
       },
     },
     {
+      id: 6,
       name: 'Em breve...',
       url: LOLLOGOIMG,
       desc: {
@@ -102,6 +113,7 @@ function App() {
       },
     },
     {
+      id: 7,
       name: 'Em breve...',
       url: LOLLOGOIMG,
       desc: {
@@ -113,6 +125,7 @@ function App() {
       },
     },
     {
+      id: 8,
       name: 'Em breve...',
       url: LOLLOGOIMG,
       desc: {
@@ -124,6 +137,7 @@ function App() {
       },
     },
     {
+      id: 9,
       name: 'Em breve...',
       url: LOLLOGOIMG,
       desc: {
@@ -135,10 +149,6 @@ function App() {
       },
     },
   ];
-  useEffect(() => {
-    setYourChamp(champions[Math.floor(Math.random() * champions.length)]);
-  }, []);
-  console.log(yourChamp);
 
   return (
     <div>
@@ -162,6 +172,14 @@ function App() {
             <h1>Seu personagem</h1>
             <img src={yourChamp.url} alt="" />
           </span>
+          <button
+            onClick={() => {
+              setSelectChamp(true);
+              setModal(true);
+            }}
+          >
+            🔁
+          </button>
           <p className="p-yourChamp">
             <strong>Nome:</strong> {yourChamp.name}
             <strong>Habilidade:</strong> {yourChamp.desc.Ability}
@@ -169,6 +187,43 @@ function App() {
             <strong>História:</strong> {yourChamp.desc.Historia}
           </p>
         </div>
+        {modal && (
+          <div className="modal">
+            <h1>ESCOLHA...</h1>
+            {selectChamp ? (
+              <div>
+                <button onClick={() => setSelectChamp(false)}>
+                  Escolher seu Campeão
+                </button>
+                OU
+                <button
+                  onClick={() => {
+                    setYourChamp(
+                      champions[Math.floor(Math.random() * champions.length)],
+                    );
+                    setModal(false);
+                  }}
+                >
+                  Campeão Aleatório
+                </button>
+              </div>
+            ) : (
+              <div className="modal-selectChamp">
+                {champions.map(({ id, name, url }) => (
+                  <img
+                    src={url}
+                    alt=""
+                    key={name}
+                    onClick={() => {
+                      setYourChamp(champions[id]);
+                      setModal(false);
+                    }}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        )}
       </section>
       <Footer />
     </div>
