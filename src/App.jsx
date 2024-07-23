@@ -18,6 +18,8 @@ import XAYAHIMG from '/src/assets/img/Xayah.jpg';
 import XAYAHBAN from '/src/assets/img-ban/Xayah.jpg';
 import YASUOIMG from '/src/assets/img/Yasuo.jfif';
 import YASUOBAN from '/src/assets/img-ban/Yasuo.jpg';
+import BLITZIMG from '/src/assets/img/Blitz.jfif';
+import BLITZBAN from '/src/assets/img-ban/Blitz.jpg';
 import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
 
 function App() {
@@ -138,16 +140,16 @@ function App() {
     },
     {
       id: 7,
-      name: 'Em breve...',
+      name: 'BlitzCrank',
       urlboolean: true,
-      urltrue: LOLLOGOIMG,
-      urlfalse: LOLLOGOIMG,
+      urltrue: BLITZIMG,
+      urlfalse: BLITZBAN,
       desc: {
         Ability:
-          'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
-        Local: 'Local...Em breve...',
+          'Blitzcrank dispara a mão direita para pegar um inimigo no trajeto, causando dano e puxando-o em sua direção.',
+        Local: 'Zaun',
         Historia:
-          'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+          'Blitzcrank é um autômato enorme e praticamente indestrutível de Zaun, construído originalmente para lidar com lixo tóxico.',
       },
     },
     {
