@@ -162,7 +162,7 @@ function App() {
             <h1>Seu personagem</h1>
             <img src={yourChamp.url} alt="" />
           </span>
-          <p>
+          <p className="p-yourChamp">
             <strong>Nome:</strong> {yourChamp.name}
             <strong>Habilidade:</strong> {yourChamp.desc.Ability}
             <strong>Local:</strong> {yourChamp.desc.Local}
