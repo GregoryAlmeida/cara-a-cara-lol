@@ -5,17 +5,25 @@ import './App.css';
 import './Modal.css';
 import Footer from './Footer/Footer';
 import BRIARIMG from '/src/assets/img/Briar.jpg';
+import BRIARBAN from '/src/assets/img-ban/Briar.jpg';
 import WUKONGIMG from '/src/assets/img/Wukong.jfif';
+import WUKONGBAN from '/src/assets/img-ban/Wukong.jpg';
 import REKSAIIMG from '/src/assets/img/RekSai.jpg';
+import REKSAIBAN from '/src/assets/img-ban/RekSai.jpg';
 import JINXIMG from '/src/assets/img/Jinx.png';
+import JINXBAN from '/src/assets/img-ban/Jinx.png';
 import XINZHAOIMG from '/src/assets/img/XinZhao.jfif';
+import XINZHAOBAN from '/src/assets/img-ban/XinZhao.jpg';
 import XAYAHIMG from '/src/assets/img/Xayah.jpg';
+import XAYAHBAN from '/src/assets/img-ban/Xayah.jpg';
 import YASUOIMG from '/src/assets/img/Yasuo.jfif';
+import YASUOBAN from '/src/assets/img-ban/Yasuo.jpg';
 import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
 
 function App() {
   const [modal, setModal] = useState(true);
   const [selectChamp, setSelectChamp] = useState(true);
+  const [opacity, setOpacity] = useState(1);
 
   const [yourChamp, setYourChamp] = useState({
     name: 'Briar',
@@ -29,11 +37,13 @@ function App() {
     },
   });
 
-  const champions = [
+  const [champions, setChampions] = useState([
     {
       id: 0,
       name: 'Briar',
-      url: BRIARIMG,
+      urlboolean: true,
+      urltrue: BRIARIMG,
+      urlfalse: BRIARBAN,
       desc: {
         Ability:
           'Durante o Frenesi Sanguinário, ela ganha Velocidade de Ataque e Velocidade de Movimento, e seus ataques causam Dano Físico ao redor do alvo principal.',
@@ -45,7 +55,9 @@ function App() {
     {
       id: 1,
       name: 'Wukong',
-      url: WUKONGIMG,
+      urlboolean: true,
+      urltrue: WUKONGIMG,
+      urlfalse: WUKONGBAN,
       desc: {
         Ability:
           'O próximo ataque de Wukong recebe Alcance de Ataque, causa dano adicional e reduz a Armadura do alvo por alguns segundos.',
@@ -57,7 +69,9 @@ function App() {
     {
       id: 2,
       name: 'RekSai',
-      url: REKSAIIMG,
+      urlboolean: true,
+      urltrue: REKSAIIMG,
+      urlfalse: REKSAIBAN,
       desc: {
         Ability:
           'Ela pode ativar essa habilidade para se tornar brevemente inalvejável e saltar até o alvo marcado, causando dano pesado com base na Vida perdida dele',
@@ -69,7 +83,9 @@ function App() {
     {
       id: 3,
       name: 'Jinx',
-      url: JINXIMG,
+      urlboolean: true,
+      urltrue: JINXIMG,
+      urlfalse: JINXBAN,
       desc: {
         Ability:
           'Jinx usa Zapper, sua pistola de choques, para disparar um projétil que causa dano ao primeiro inimigo atingido, reduzindo sua velocidade e revelando-o.',
@@ -81,7 +97,9 @@ function App() {
     {
       id: 4,
       name: 'Xin Zhao',
-      url: XINZHAOIMG,
+      urlboolean: true,
+      urltrue: XINZHAOIMG,
+      urlfalse: XINZHAOBAN,
       desc: {
         Ability:
           'Xin Zhao golpeia à frente com a lança, causando Lentidão e marcando os inimigos atingidos como Desafiados.',
@@ -93,7 +111,9 @@ function App() {
     {
       id: 5,
       name: 'Xayah',
-      url: XAYAHIMG,
+      urlboolean: true,
+      urltrue: XAYAHIMG,
+      urlfalse: XAYAHBAN,
       desc: {
         Ability:
           'Xayah recolhe todas as Plumas que caíram, causando dano e enraizando os inimigos.',
@@ -105,7 +125,9 @@ function App() {
     {
       id: 6,
       name: 'Yasuo',
-      url: YASUOIMG,
+      urlboolean: true,
+      urltrue: YASUOIMG,
+      urlfalse: YASUOBAN,
       desc: {
         Ability:
           'Cria uma parede movediça que bloqueia todos os projéteis inimigos por 4 segundos.',
@@ -117,7 +139,9 @@ function App() {
     {
       id: 7,
       name: 'Em breve...',
-      url: LOLLOGOIMG,
+      urlboolean: true,
+      urltrue: LOLLOGOIMG,
+      urlfalse: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
@@ -129,7 +153,9 @@ function App() {
     {
       id: 8,
       name: 'Em breve...',
-      url: LOLLOGOIMG,
+      urlboolean: true,
+      urltrue: LOLLOGOIMG,
+      urlfalse: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
@@ -141,7 +167,9 @@ function App() {
     {
       id: 9,
       name: 'Em breve...',
-      url: LOLLOGOIMG,
+      urlboolean: true,
+      urltrue: LOLLOGOIMG,
+      urlfalse: LOLLOGOIMG,
       desc: {
         Ability:
           'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
@@ -150,29 +178,46 @@ function App() {
           'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
       },
     },
-  ];
+  ]);
 
   return (
     <div>
       <Header />
       <section>
         <div className="div-game">
-          {champions.map(({ name, url, desc }) => (
-            <span id={crypto.randomUUID()}>
-              <img className="img" src={url} alt={name} />
-              <p className="p-img">
-                <strong>Nome:</strong> {name} <br />
-                <strong>Habilidade:</strong> {desc.Ability} <br />
-                <strong>Local:</strong> {desc.Local} <br />
-                <strong>História:</strong> {desc.Historia}
-              </p>
-            </span>
-          ))}
+          {champions.map(
+            ({ id, name, urlboolean, urltrue, urlfalse, desc }) => (
+              <span
+                id={id}
+                onClick={() => {
+                  champions[id].urlboolean = !champions[id].urlboolean;
+                  setChampions(champions);
+                  setOpacity(0);
+                  setModal(true);
+                  setTimeout(() => {
+                    setModal(false);
+                  });
+                }}
+              >
+                <img
+                  className="img"
+                  src={urlboolean ? urltrue : urlfalse}
+                  alt={name}
+                />
+                <p className="p-img">
+                  <strong>Nome:</strong> {name} <br />
+                  <strong>Habilidade:</strong> {desc.Ability} <br />
+                  <strong>Local:</strong> {desc.Local} <br />
+                  <strong>História:</strong> {desc.Historia}
+                </p>
+              </span>
+            ),
+          )}
         </div>
         <div className="div-myCaracter">
           <span>
             <h1>Seu personagem</h1>
-            <img src={yourChamp.url} alt="" />
+            <img src={yourChamp.urltrue} alt="" />
           </span>
           <button
             onClick={() => {
@@ -190,7 +235,7 @@ function App() {
           </p>
         </div>
         {modal && (
-          <div className="modal">
+          <div className="modal" style={{ opacity: opacity }}>
             <h1>ESCOLHA</h1>
             {selectChamp ? (
               <div>
@@ -211,9 +256,9 @@ function App() {
               </div>
             ) : (
               <div className="modal-selectChamp">
-                {champions.map(({ id, name, url }) => (
+                {champions.map(({ id, name, urltrue }) => (
                   <img
-                    src={url}
+                    src={urltrue}
                     alt=""
                     key={name}
                     onClick={() => {
