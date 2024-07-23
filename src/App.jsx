@@ -223,6 +223,7 @@ function App() {
             onClick={() => {
               setSelectChamp(true);
               setModal(true);
+              setOpacity(1);
             }}
           >
             🔁
