@@ -20,6 +20,8 @@ import YASUOIMG from '/src/assets/img/Yasuo.jfif';
 import YASUOBAN from '/src/assets/img-ban/Yasuo.jpg';
 import BLITZIMG from '/src/assets/img/Blitz.jfif';
 import BLITZBAN from '/src/assets/img-ban/Blitz.jpg';
+import IRELIAIMG from '/src/assets/img/Irelia.jpg';
+import IRELIABAN from '/src/assets/img-ban/Irelia.jpg';
 import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
 
 function App() {
@@ -154,16 +156,16 @@ function App() {
     },
     {
       id: 8,
-      name: 'Em breve...',
+      name: 'Irelia',
       urlboolean: true,
-      urltrue: LOLLOGOIMG,
-      urlfalse: LOLLOGOIMG,
+      urltrue: IRELIAIMG,
+      urlfalse: IRELIABAN,
       desc: {
         Ability:
-          'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
-        Local: 'Local...Em breve...',
+          'Irelia carrega um golpe que causa mais dano conforme o carregamento. Ela também recebe Dano Físico reduzido durante esse carregamento.',
+        Local: 'Ionia',
         Historia:
-          'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+          'A ocupação noxiana de Ionia produziu muitos heróis, mas nenhum era mais improvável do que a jovem Irelia de Navori.',
       },
     },
     {
