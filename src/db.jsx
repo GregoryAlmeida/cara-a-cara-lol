@@ -1,7 +1,11 @@
 import BRIARIMG from '/src/assets/img/Briar.jpg';
 import BRIARBAN from '/src/assets/img-ban/Briar.jpg';
+import BRIARPICK from '/src/assets/audio/BriarPick.mp3';
+
 import WUKONGIMG from '/src/assets/img/Wukong.jfif';
 import WUKONGBAN from '/src/assets/img-ban/Wukong.jpg';
+import WUKONGPICK from '/src/assets/audio/WukongPick.mp3';
+
 import REKSAIIMG from '/src/assets/img/RekSai.jpg';
 import REKSAIBAN from '/src/assets/img-ban/RekSai.jpg';
 import JINXIMG from '/src/assets/img/Jinx.png';
@@ -25,6 +29,7 @@ export const champions = [
     urlboolean: true,
     urltrue: BRIARIMG,
     urlfalse: BRIARBAN,
+    audiopick: BRIARPICK,
     desc: {
       Ability:
         'Durante o Frenesi Sanguinário, ela ganha Velocidade de Ataque e Velocidade de Movimento, e seus ataques causam Dano Físico ao redor do alvo principal.',
@@ -39,6 +44,7 @@ export const champions = [
     urlboolean: true,
     urltrue: WUKONGIMG,
     urlfalse: WUKONGBAN,
+    audiopick: WUKONGPICK,
     desc: {
       Ability:
         'O próximo ataque de Wukong recebe Alcance de Ataque, causa dano adicional e reduz a Armadura do alvo por alguns segundos.',

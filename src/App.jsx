@@ -11,14 +11,26 @@ function App() {
   const [selectChamp, setSelectChamp] = useState(true);
   const [opacity, setOpacity] = useState(1);
   const [yourChamp, setYourChamp] = useState(null);
+  const [audio, setAudio] = useState('');
 
   return (
     <div>
+      <audio src={audio} autoPlay />
+
       <Header />
       <section>
         <div className="div-game">
           {champions.map(
-            ({ id, name, urlboolean, urltrue, urlfalse, desc }) => (
+            ({
+              id,
+              name,
+              urlboolean,
+              urltrue,
+              urlfalse,
+              audiopick,
+              audioban,
+              desc,
+            }) => (
               <span
                 id={id}
                 onClick={() => {
@@ -92,14 +104,15 @@ function App() {
               </div>
             ) : (
               <div className="modal-selectChamp">
-                {champions.map(({ id, name, urltrue }) => (
+                {champions.map(({ id, name, urltrue, audiopick }) => (
                   <img
                     src={urltrue}
-                    alt=""
-                    key={name}
+                    alt={name}
+                    key={id}
                     onClick={() => {
                       setYourChamp(champions[id]);
                       setModal(false);
+                      setAudio(audiopick);
                     }}
                   />
                 ))}
