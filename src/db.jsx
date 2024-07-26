@@ -8,18 +8,32 @@ import WUKONGPICK from '/src/assets/audio/WukongPick.mp3';
 
 import REKSAIIMG from '/src/assets/img/RekSai.jpg';
 import REKSAIBAN from '/src/assets/img-ban/RekSai.jpg';
+import REKSAIPICK from '/src/assets/audio/RekSaiPick.mp3';
+
 import JINXIMG from '/src/assets/img/Jinx.png';
 import JINXBAN from '/src/assets/img-ban/Jinx.png';
+import JINXPICK from '/src/assets/audio/JinxPick.mp3';
+
 import XINZHAOIMG from '/src/assets/img/XinZhao.jfif';
 import XINZHAOBAN from '/src/assets/img-ban/XinZhao.jpg';
+import XINZHAOPICK from '/src/assets/audio/XinZhaoPick.mp3';
+
 import XAYAHIMG from '/src/assets/img/Xayah.jpg';
 import XAYAHBAN from '/src/assets/img-ban/Xayah.jpg';
+import XAYAHPICK from '/src/assets/audio/XayahPick.mp3';
+
 import YASUOIMG from '/src/assets/img/Yasuo.jfif';
 import YASUOBAN from '/src/assets/img-ban/Yasuo.jpg';
+import YASUOPICK from '/src/assets/audio/YasuoPick.mp3';
+
 import BLITZIMG from '/src/assets/img/Blitz.jfif';
 import BLITZBAN from '/src/assets/img-ban/Blitz.jpg';
+import BLITZPICK from '/src/assets/audio/BlitzPick.mp3';
+
 import IRELIAIMG from '/src/assets/img/Irelia.jpg';
 import IRELIABAN from '/src/assets/img-ban/Irelia.jpg';
+import IRELIAPICK from '/src/assets/audio/IreliaPick.mp3';
+
 import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
 
 export const champions = [
@@ -59,6 +73,7 @@ export const champions = [
     urlboolean: true,
     urltrue: REKSAIIMG,
     urlfalse: REKSAIBAN,
+    audiopick: REKSAIPICK,
     desc: {
       Ability:
         'Ela pode ativar essa habilidade para se tornar brevemente inalvejável e saltar até o alvo marcado, causando dano pesado com base na Vida perdida dele',
@@ -73,6 +88,7 @@ export const champions = [
     urlboolean: true,
     urltrue: JINXIMG,
     urlfalse: JINXBAN,
+    audiopick: JINXPICK,
     desc: {
       Ability:
         'Jinx usa Zapper, sua pistola de choques, para disparar um projétil que causa dano ao primeiro inimigo atingido, reduzindo sua velocidade e revelando-o.',
@@ -87,6 +103,7 @@ export const champions = [
     urlboolean: true,
     urltrue: XINZHAOIMG,
     urlfalse: XINZHAOBAN,
+    audiopick: XINZHAOPICK,
     desc: {
       Ability:
         'Xin Zhao golpeia à frente com a lança, causando Lentidão e marcando os inimigos atingidos como Desafiados.',
@@ -101,6 +118,7 @@ export const champions = [
     urlboolean: true,
     urltrue: XAYAHIMG,
     urlfalse: XAYAHBAN,
+    audiopick: XAYAHPICK,
     desc: {
       Ability:
         'Xayah recolhe todas as Plumas que caíram, causando dano e enraizando os inimigos.',
@@ -115,6 +133,7 @@ export const champions = [
     urlboolean: true,
     urltrue: YASUOIMG,
     urlfalse: YASUOBAN,
+    audiopick: YASUOPICK,
     desc: {
       Ability:
         'Cria uma parede movediça que bloqueia todos os projéteis inimigos por 4 segundos.',
@@ -129,6 +148,7 @@ export const champions = [
     urlboolean: true,
     urltrue: BLITZIMG,
     urlfalse: BLITZBAN,
+    audiopick: BLITZPICK,
     desc: {
       Ability:
         'Blitzcrank dispara a mão direita para pegar um inimigo no trajeto, causando dano e puxando-o em sua direção.',
@@ -143,6 +163,7 @@ export const champions = [
     urlboolean: true,
     urltrue: IRELIAIMG,
     urlfalse: IRELIABAN,
+    audiopick: IRELIAPICK,
     desc: {
       Ability:
         'Irelia carrega um golpe que causa mais dano conforme o carregamento. Ela também recebe Dano Físico reduzido durante esse carregamento.',
