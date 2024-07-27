@@ -13,6 +13,12 @@ function App() {
   const [yourChamp, setYourChamp] = useState(null);
   const [audio, setAudio] = useState('');
 
+  const randomChamp = (props) => {
+    setYourChamp(props);
+    setAudio(props.audiopick);
+    setModal(false);
+  };
+
   return (
     <div>
       <audio src={audio} autoPlay />
@@ -32,7 +38,7 @@ function App() {
               desc,
             }) => (
               <span
-                id={id}
+                key={id}
                 onClick={() => {
                   champions[id].urlboolean = !champions[id].urlboolean;
                   setOpacity(0);
@@ -92,12 +98,11 @@ function App() {
                 </button>
                 OU
                 <button
-                  onClick={() => {
-                    setYourChamp(
+                  onClick={() =>
+                    randomChamp(
                       champions[Math.floor(Math.random() * champions.length)],
-                    );
-                    setModal(false);
-                  }}
+                    )
+                  }
                 >
                   Campeão Aleatório
                 </button>

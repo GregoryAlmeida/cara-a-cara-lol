@@ -33,8 +33,11 @@ import BLITZPICK from '/src/assets/audio/BlitzPick.mp3';
 import IRELIAIMG from '/src/assets/img/Irelia.jpg';
 import IRELIABAN from '/src/assets/img-ban/Irelia.jpg';
 import IRELIAPICK from '/src/assets/audio/IreliaPick.mp3';
+import MORDEKAISERIMG from '/src/assets/img/Mordekaiser.jpg';
+import MORDEKAISERBAN from '/src/assets/img-ban/Mordekaiser.jpg';
+import MORDEKAISERPICK from '/src/assets/audio/MordekaiserPick.mp3';
 
-import LOLLOGOIMG from '/src/assets/LOL-LOGO.png';
+import LOGOLOL from '/src/assets/LOL-LOGO.png';
 
 export const champions = [
   {
@@ -174,16 +177,157 @@ export const champions = [
   },
   {
     id: 9,
-    name: 'Em breve...',
+    name: 'Mordekaiser',
     urlboolean: true,
-    urltrue: LOLLOGOIMG,
-    urlfalse: LOLLOGOIMG,
+    urltrue: MORDEKAISERIMG,
+    urlfalse: MORDEKAISERBAN,
+    audiopick: MORDEKAISERPICK,
     desc: {
       Ability:
-        'Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....Habilidadade....',
-      Local: 'Local...Em breve...',
+        'Mordekaiser golpeia o chão com sua maça, causando dano a cada inimigo atingido. O dano é aumentado quando atingir um único inimigo.',
+      Local: 'Noxus',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Morto e renascido duas vezes, Mordekaiser é um cruel comandante de uma época perdida.',
+    },
+  },
+  {
+    id: 10,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 11,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 12,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 13,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 14,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 15,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 16,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 17,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 18,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+    },
+  },
+  {
+    id: 19,
+    name: '',
+    urlboolean: true,
+    urltrue: LOGOLOL,
+    urlfalse: LOGOLOL,
+    desc: {
+      Ability:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+      Local: 'Em breve...',
+      Historia:
+        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
     },
   },
 ];
