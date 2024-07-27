@@ -25,44 +25,37 @@ function App() {
 
       <Header />
       <section>
-        <div className="div-game">
-          {champions.map(
-            ({
-              id,
-              name,
-              urlboolean,
-              urltrue,
-              urlfalse,
-              audiopick,
-              audioban,
-              desc,
-            }) => (
-              <span
-                key={id}
-                onClick={() => {
-                  champions[id].urlboolean = !champions[id].urlboolean;
-                  setOpacity(0);
-                  setModal(true);
-                  setTimeout(() => {
-                    setModal(false);
-                  });
-                }}
-              >
-                <img
-                  className="img"
-                  src={urlboolean ? urltrue : urlfalse}
-                  alt={name}
-                />
-                <p className="p-img">
-                  <strong>Nome:</strong> {name} <br />
-                  <strong>Habilidade:</strong> {desc.Ability} <br />
-                  <strong>Local:</strong> {desc.Local} <br />
-                  <strong>História:</strong> {desc.Historia}
-                </p>
-              </span>
-            ),
-          )}
-        </div>
+        {yourChamp && (
+          <div className="div-game">
+            {champions.map(
+              ({ id, name, urlboolean, urltrue, urlfalse, desc }) => (
+                <span
+                  key={id}
+                  onClick={() => {
+                    champions[id].urlboolean = !champions[id].urlboolean;
+                    setOpacity(0);
+                    setModal(true);
+                    setTimeout(() => {
+                      setModal(false);
+                    });
+                  }}
+                >
+                  <img
+                    className="img"
+                    src={urlboolean ? urltrue : urlfalse}
+                    alt={name}
+                  />
+                  <p className="p-img">
+                    <strong>Nome:</strong> {name} <br />
+                    <strong>Habilidade:</strong> {desc.Ability} <br />
+                    <strong>Local:</strong> {desc.Local} <br />
+                    <strong>História:</strong> {desc.Historia}
+                  </p>
+                </span>
+              ),
+            )}
+          </div>
+        )}
         {yourChamp && (
           <div className="div-myCaracter">
             <span>
@@ -74,6 +67,7 @@ function App() {
                 setSelectChamp(true);
                 setModal(true);
                 setOpacity(1);
+                setYourChamp(null);
               }}
             >
               🔁

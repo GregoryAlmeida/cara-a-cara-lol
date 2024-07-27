@@ -33,9 +33,26 @@ import BLITZPICK from '/src/assets/audio/BlitzPick.mp3';
 import IRELIAIMG from '/src/assets/img/Irelia.jpg';
 import IRELIABAN from '/src/assets/img-ban/Irelia.jpg';
 import IRELIAPICK from '/src/assets/audio/IreliaPick.mp3';
+
 import MORDEKAISERIMG from '/src/assets/img/Mordekaiser.jpg';
 import MORDEKAISERBAN from '/src/assets/img-ban/Mordekaiser.jpg';
 import MORDEKAISERPICK from '/src/assets/audio/MordekaiserPick.mp3';
+
+import KAISAIMG from '/src/assets/img/Kaisa.jpg';
+import KAISABAN from '/src/assets/img-ban/Kaisa.jpg';
+import KAISAPICK from '/src/assets/audio/KaiSaPick.mp3';
+
+import SERAPHINEIMG from '/src/assets/img/Seraphine.jpg';
+import SERAPHINEBAN from '/src/assets/img-ban/Seraphine.jpg';
+import SERAPHINEPICK from '/src/assets/audio/SeraphinePick.mp3';
+
+import AATROXIMG from '/src/assets/img/Aatrox.png';
+import AATROXBAN from '/src/assets/img-ban/Aatrox.png';
+import AATROXPICK from '/src/assets/audio/AatroxPick.mp3';
+
+import KATARINAIMG from '/src/assets/img/Katarina.png';
+import KATARINABAN from '/src/assets/img-ban/Katarina.png';
+import KATARINAPICK from '/src/assets/audio/KatarinaPick.mp3';
 
 import LOGOLOL from '/src/assets/LOL-LOGO.png';
 
@@ -192,44 +209,47 @@ export const champions = [
   },
   {
     id: 10,
-    name: '',
+    name: 'Kaisa',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: KAISAIMG,
+    urlfalse: KAISABAN,
+    audiopick: KAISAPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'KaiSa dispara uma chuva de projéteis que correm atrás de alvos próximos. Arma Viva: Chuva Icathiana é aprimorada e lança mais mísseis.',
+      Local: 'O Vazio',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Capturada pelo Vazio quando era apenas uma criança, KaiSa conseguiu sobreviver por pura persistência e força de vontade.',
     },
   },
   {
     id: 11,
-    name: '',
+    name: 'Seraphine',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: SERAPHINEIMG,
+    urlfalse: SERAPHINEBAN,
+    audiopick: SERAPHINEPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'Seraphine causa dano e Encanta os inimigos atingidos, ampliando o alcance a cada Campeão aliado ou inimigo atingido.',
+      Local: 'Piltover',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Nascida em Piltover e filha de zaunitas, Seraphine é capaz de ouvir a alma das pessoas. O mundo canta para ela, e ela canta em resposta.',
     },
   },
   {
     id: 12,
-    name: '',
+    name: 'Aatrox',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: AATROXIMG,
+    urlfalse: AATROXBAN,
+    audiopick: AATROXPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'Aatrox libera sua forma demoníaca, aterrorizando tropas inimigas próximas, ganhando Dano de Ataque, cura aumentada e Velocidade de Movimento. Se ele conseguir um abate, este efeito é estendido.',
+      Local: 'Runeterra',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Antes defensores honrados de Shurima contra o temido Vazio, Aatrox e seus irmãos acabaram se tornando uma ameaça ainda maior para Runeterra.',
     },
   },
   {
@@ -276,16 +296,17 @@ export const champions = [
   },
   {
     id: 16,
-    name: '',
+    name: 'Katarina',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: KATARINAIMG,
+    urlfalse: KATARINABAN,
+    audiopick: KATARINAPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'Katarina gira em torno de si mesma, disparando adagas muito rapidamente e causando muito Dano Mágico nos 3 Campeões inimigos mais próximos.',
+      Local: 'Noxus',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Decisiva em seus julgamentos e letal em combate, Katarina é a assassina de maior calibre de Noxus.',
     },
   },
   {
