@@ -55,6 +55,14 @@ import KATARINAIMG from '/src/assets/img/Katarina.png';
 import KATARINABAN from '/src/assets/img-ban/Katarina.png';
 import KATARINAPICK from '/src/assets/audio/KatarinaPick.mp3';
 
+import LEONAIMG from '/src/assets/img/Leona.jpg';
+import LEONABAN from '/src/assets/img-ban/Leona.jpg';
+import LEONAPICK from '/src/assets/audio/LeonaPick.mp3';
+
+import VLADMIRIMG from '/src/assets/img/Vladmir.jpg';
+import VLADMIRBAN from '/src/assets/img-ban/Vladmir.jpg';
+import VLADMIRPICK from '/src/assets/audio/VladmirPick.mp3';
+
 import LOGOLOL from '/src/assets/LOL-LOGO.png';
 
 export const champions = [
@@ -256,16 +264,17 @@ export const champions = [
   },
   {
     id: 13,
-    name: '',
+    name: 'Vladmir',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: VLADMIRIMG,
+    urlfalse: VLADMIRBAN,
+    audiopick: VLADMIRPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'Vladimir rouba vida do inimigo-alvo. Quando sua reserva estiver cheia, Transfusão terá os benefícios de dano e cura drasticamente aumentados por um breve período.',
+      Local: 'Noxus',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Um demônio sedento pelo sangue dos mortais, Vladimir tem influenciado os acontecimentos de Noxus desde os primórdios do império.',
     },
   },
   {
@@ -327,16 +336,17 @@ export const champions = [
   },
   {
     id: 18,
-    name: '',
+    name: 'Leona',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: LEONAIMG,
+    urlfalse: LEONABAN,
+    audiopick: LEONAPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'Leona usa seu escudo para fazer seu próximo ataque básico, causando Dano Mágico adicional e atordoando o alvo.',
+      Local: 'Targon',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Impregnada pelas chamas do sol, Leona é uma guerreira sagrada de Solari que defende o Monte Targon com sua Lâmina Zênite e a Proteção da Aurora.',
     },
   },
   {
