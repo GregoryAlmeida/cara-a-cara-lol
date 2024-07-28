@@ -28,7 +28,15 @@ function App() {
         {yourChamp && (
           <div className="div-game">
             {champions.map(
-              ({ id, name, urlboolean, urltrue, urlfalse, desc }) => (
+              ({
+                id,
+                name,
+                urlboolean,
+                urltrue,
+                urlfalse,
+                desc,
+                audiohidden,
+              }) => (
                 <span
                   key={id}
                   onClick={() => {
@@ -38,6 +46,8 @@ function App() {
                     setTimeout(() => {
                       setModal(false);
                     });
+
+                    if (yourChamp.id === 7) setAudio(audiohidden);
                   }}
                 >
                   <img

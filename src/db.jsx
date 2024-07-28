@@ -29,6 +29,7 @@ import YASUOPICK from '/src/assets/audio/YasuoPick.mp3';
 import BLITZIMG from '/src/assets/img/Blitz.jfif';
 import BLITZBAN from '/src/assets/img-ban/Blitz.jpg';
 import BLITZPICK from '/src/assets/audio/BlitzPick.mp3';
+import BLITZHIDDEN from '/src/assets/audio/BlitzHidden.mp3';
 
 import IRELIAIMG from '/src/assets/img/Irelia.jpg';
 import IRELIABAN from '/src/assets/img-ban/Irelia.jpg';
@@ -169,6 +170,7 @@ export const champions = [
     urltrue: BLITZIMG,
     urlfalse: BLITZBAN,
     audiopick: BLITZPICK,
+    audiohidden: BLITZHIDDEN,
     desc: {
       Ability:
         'Blitzcrank dispara a mão direita para pegar um inimigo no trajeto, causando dano e puxando-o em sua direção.',
