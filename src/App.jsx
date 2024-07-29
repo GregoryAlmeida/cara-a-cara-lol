@@ -47,7 +47,7 @@ function App() {
                       setModal(false);
                     });
 
-                    if (yourChamp.id === 7) setAudio(audiohidden);
+                    if (yourChamp.id === id) setAudio(audiohidden);
                   }}
                 >
                   <img

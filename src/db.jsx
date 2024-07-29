@@ -63,6 +63,11 @@ import VLADMIRIMG from '/src/assets/img/Vladmir.jpg';
 import VLADMIRBAN from '/src/assets/img-ban/Vladmir.jpg';
 import VLADMIRPICK from '/src/assets/audio/VladmirPick.mp3';
 
+import SWAINIMG from '/src/assets/img/Swain.jpg';
+import SWAINBAN from '/src/assets/img-ban/Swain.jpg';
+import SWAINPICK from '/src/assets/audio/SwainPick.mp3';
+import SWAINHIDDEN from '/src/assets/audio/SwainHidden.mp3';
+
 import LOGOLOL from '/src/assets/LOL-LOGO.png';
 
 export const champions = [
@@ -293,16 +298,18 @@ export const champions = [
   },
   {
     id: 15,
-    name: '',
+    name: 'Swain',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: SWAINIMG,
+    urlfalse: SWAINBAN,
+    audiopick: SWAINPICK,
+    audiohidden: SWAINHIDDEN,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'Os corvos de Swain coletam Fragmentos de Alma que o curam e aumentam permanentemente a Vida máxima dele.',
+      Local: 'Noxus',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Jericho Swain é o líder visionário de Noxus, uma nação expansionista que venera apenas a força.',
     },
   },
   {
