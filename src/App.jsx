@@ -81,6 +81,7 @@ function App() {
               }}
             >
               🔁
+              <strong className="info-mobile">Info ⬇</strong>
             </button>
 
             <p className="p-yourChamp">
@@ -96,7 +97,7 @@ function App() {
           <div className="modal" style={{ opacity: opacity }}>
             <h1>ESCOLHA</h1>
             {selectChamp ? (
-              <div>
+              <div className="button-select">
                 <button onClick={() => setSelectChamp(false)}>
                   Escolher Campeão
                 </button>

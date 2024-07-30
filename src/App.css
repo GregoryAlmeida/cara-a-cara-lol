@@ -24,13 +24,11 @@ section {
 
   align-items: center;
 
-
   .div-game {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 80%;
     min-height: 25rem;
     margin-bottom: 20%;
 
@@ -108,6 +106,8 @@ section {
     width: 100%;
     min-height: 10rem;
 
+    z-index: 1;
+
     button {
       border: none;
       cursor: pointer;
@@ -171,4 +171,28 @@ strong {
   padding: 0.3rem;
   color: red;
   word-break: break-word;
+}
+
+.info-mobile {
+  font-size: 2rem;
+  text-align: center;
+  color: #F8F7E7;
+  word-break: break-all;
+  display: none;
+}
+
+@media (max-width: 50rem) {
+  .p-img {
+   top: 10rem;
+   left: 0;
+  }
+
+  .div-myCaracter {
+    max-height: 40%;
+    overflow-y: auto;
+  }
+
+  .info-mobile {
+    display: block;
+  }
 }
