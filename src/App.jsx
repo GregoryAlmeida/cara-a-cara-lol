@@ -78,6 +78,8 @@ function App() {
                 setModal(true);
                 setOpacity(1);
                 setYourChamp(null);
+
+                for (const c in champions) champions[c].urlboolean = true;
               }}
             >
               🔁
