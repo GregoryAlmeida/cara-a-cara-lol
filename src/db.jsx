@@ -68,6 +68,10 @@ import SWAINBAN from '/src/assets/img-ban/Swain.jpg';
 import SWAINPICK from '/src/assets/audio/SwainPick.mp3';
 import SWAINHIDDEN from '/src/assets/audio/SwainHidden.mp3';
 
+import DRAVENIMG from '/src/assets/img/Draven.jpg';
+import DRAVENBAN from '/src/assets/img-ban/Draven.jpg';
+import DRAVENPICK from '/src/assets/audio/DravenPick.mp3';
+
 import LOGOLOL from '/src/assets/LOL-LOGO.png';
 
 export const champions = [
@@ -329,16 +333,17 @@ export const champions = [
   },
   {
     id: 17,
-    name: '',
+    name: 'Draven',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: DRAVENIMG,
+    urlfalse: DRAVENBAN,
+    audiopick: DRAVENPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'Draven ganha Adoração de seus fãs quando apanha uma Revolução do Machado ou abate uma tropa, monstro ou torre. Abater Campeões inimigos concede ouro adicional a Draven, com base em quanta Adoração ele tem.',
+      Local: 'Noxus',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Em Noxus, guerreiros conhecidos como Desafiadores lutam um contra o outro em uma arena onde sangue é derramado e a força é testada, mas nenhum foi tão celebrado como Draven.',
     },
   },
   {

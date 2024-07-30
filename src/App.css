@@ -24,7 +24,17 @@ section {
 
   align-items: center;
 
+
+
+  span:hover {
+    .p-img {
+      display: list-item;
+    }
+  }
+
   .div-game {
+    width: 80%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -66,7 +76,7 @@ section {
         display: none;
         position: absolute;
         right: -10rem;
-        z-index: 1;
+        z-index: 10;
 
         background-color: #111111;
         color: #F8F7E7;
@@ -82,13 +92,6 @@ section {
 
     }
   }
-
-  span:hover {
-    .p-img {
-      display: list-item;
-    }
-  }
-
 
   .div-myCaracter {
     display: flex;
