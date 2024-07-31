@@ -50,6 +50,7 @@ import SERAPHINEPICK from '/src/assets/audio/SeraphinePick.mp3';
 import AATROXIMG from '/src/assets/img/Aatrox.png';
 import AATROXBAN from '/src/assets/img-ban/Aatrox.png';
 import AATROXPICK from '/src/assets/audio/AatroxPick.mp3';
+import AATROXHIDDEN from '/src/assets/audio/AatroxHidden.mp3';
 
 import KATARINAIMG from '/src/assets/img/Katarina.png';
 import KATARINABAN from '/src/assets/img-ban/Katarina.png';
@@ -263,6 +264,7 @@ export const champions = [
     urltrue: AATROXIMG,
     urlfalse: AATROXBAN,
     audiopick: AATROXPICK,
+    audiohidden: AATROXHIDDEN,
     desc: {
       Ability:
         'Aatrox libera sua forma demoníaca, aterrorizando tropas inimigas próximas, ganhando Dano de Ataque, cura aumentada e Velocidade de Movimento. Se ele conseguir um abate, este efeito é estendido.',

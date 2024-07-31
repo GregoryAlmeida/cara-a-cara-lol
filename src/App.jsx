@@ -5,6 +5,7 @@ import './App.css';
 import './Modal.css';
 import Footer from './Footer/Footer';
 import { champions } from './db';
+import JUKES from '/src/assets/img/Jukes.jpg';
 
 function App() {
   const [modal, setModal] = useState(true);
@@ -47,7 +48,7 @@ function App() {
                       setModal(false);
                     });
 
-                    if (yourChamp.id === id) setAudio(audiohidden);
+                    if (yourChamp.id === id && id != 12) setAudio(audiohidden);
                   }}
                 >
                   <img
@@ -70,7 +71,22 @@ function App() {
           <div className="div-myCaracter">
             <span>
               <h1>Seu personagem</h1>
-              <img src={yourChamp.urltrue} alt="" />
+              <img
+                src={yourChamp.urltrue}
+                onClick={() => {
+                  if (yourChamp.id === 12) {
+                    champions[12].urltrue = JUKES;
+                    setAudio(champions[12].audiohidden);
+
+                    setOpacity(0);
+                    setModal(true);
+                    setTimeout(() => {
+                      setModal(false);
+                    });
+                  }
+                }}
+                alt=""
+              />
             </span>
             <button
               onClick={() => {
