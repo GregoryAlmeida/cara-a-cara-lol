@@ -73,6 +73,14 @@ import DRAVENIMG from '/src/assets/img/Draven.jpg';
 import DRAVENBAN from '/src/assets/img-ban/Draven.jpg';
 import DRAVENPICK from '/src/assets/audio/DravenPick.mp3';
 
+import VIIMG from '/src/assets/img/Vi.jfif';
+import VIBAN from '/src/assets/img-ban/Vi.jpg';
+import VIPICK from '/src/assets/audio/ViPick.mp3';
+
+import DARIUSIMG from '/src/assets/img/Darius.jpg';
+import DARIUSBAN from '/src/assets/img-ban/Darius.jpg';
+import DARIUSPICK from '/src/assets/audio/DariusPick.mp3';
+
 import LOGOLOL from '/src/assets/LOL-LOGO.png';
 
 export const champions = [
@@ -290,16 +298,17 @@ export const champions = [
   },
   {
     id: 14,
-    name: '',
+    name: 'Vi',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: VIIMG,
+    urlfalse: VIBAN,
+    audiopick: VIPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'O próximo ataque de Vi atravessará seu alvo, causando dano aos inimigos atrás dele.',
+      Local: 'Piltover',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Antiga criminosa das ruas violentas de Zaun, Vi é uma mulher temível, impulsiva e explosiva que tem muito pouco respeito por autoridades.',
     },
   },
   {
@@ -365,16 +374,17 @@ export const champions = [
   },
   {
     id: 19,
-    name: '',
+    name: 'Darius',
     urlboolean: true,
-    urltrue: LOGOLOL,
-    urlfalse: LOGOLOL,
+    urltrue: DARIUSIMG,
+    urlfalse: DARIUSBAN,
+    audiopick: DARIUSPICK,
     desc: {
       Ability:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
-      Local: 'Em breve...',
+        'O próximo ataque de Darius acerta uma artéria importante do inimigo. Enquanto a vítima sangra, a Velocidade de Movimento dela é reduzida.',
+      Local: 'Noxus',
       Historia:
-        'Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...Em breve...',
+        'Não há símbolo maior do poder de Noxus do que Darius, o mais temido e experiente comandante da nação.',
     },
   },
 ];
